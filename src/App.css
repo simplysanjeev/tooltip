@@ -1,0 +1,117 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+#btn1 {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    outline: none;
+}
+
+#tooltip {
+    position: absolute;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-size: 12px;
+    display: inline-block;
+}
+
+#tooltip.right {
+    right: -170px;
+    margin-left: 5px;
+}
+
+#tooltip.left {
+    left: -170px;
+    margin-left: -5px;
+}
+
+#tooltip.top {
+    top: -30px;
+    margin-top: -5px;
+}
+
+#tooltip.bottom {
+    bottom: -40px;
+    margin-top: 5px;
+}
+
+#tooltip .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000;
+}
+
+#tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: auto;
+    margin-left: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000;
+}
+
+#tooltip.top .tooltip-arrow {
+    top: auto;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+#tooltip.left .tooltip-arrow {
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #000;
+    right: -5px;
+    left: auto;
+}
+
+#tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}
+
+#tooltip .tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-right-color: transparent;
+    border-style: solid;
+}
+
+#tooltip .tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+#tooltip.on {
+    display: block;
+}
+
+#tooltip.off {
+    display: none;
+}
