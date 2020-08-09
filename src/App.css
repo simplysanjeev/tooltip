@@ -1,3 +1,4 @@
+/* CSS for App Container */
 .App {
     width: 100vw;
     height: 100vh;
@@ -6,6 +7,8 @@
     align-items: center;
     background-color: lightgray;
 }
+
+/* CSS for Button */
 #btn1 {
     position: relative;
     width: 300px;
@@ -17,6 +20,7 @@
     outline: none;
 }
 
+/* css for tooltip */
 #tooltip {
     position: absolute;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -28,26 +32,31 @@
     display: inline-block;
 }
 
+/* css to right tooltip  */
 #tooltip.right {
     right: -170px;
     margin-left: 5px;
 }
 
+/* css to left tooltip  */
 #tooltip.left {
     left: -170px;
     margin-left: -5px;
 }
 
+/* css to top tooltip  */
 #tooltip.top {
     top: -30px;
     margin-top: -5px;
 }
 
+/* css to bottom tooltip  */
 #tooltip.bottom {
     bottom: -40px;
     margin-top: 5px;
 }
 
+/* css to all tooltip arrow */
 #tooltip .tooltip-arrow {
     top: 50%;
     left: 0;
@@ -55,7 +64,7 @@
     border-width: 5px 5px 5px 0;
     border-right-color: #000;
 }
-
+/* css to right tooltip arrow */
 #tooltip.right .tooltip-arrow {
     top: 50%;
     left: auto;
@@ -64,6 +73,7 @@
     border-right-color: #000;
 }
 
+/* css to top tooltip arrow */
 #tooltip.top .tooltip-arrow {
     top: auto;
     bottom: -5px;
@@ -73,6 +83,7 @@
     border-top-color: #000;
 }
 
+/* css to left tooltip arrow */
 #tooltip.left .tooltip-arrow {
     top: 50%;
     margin-top: -5px;
@@ -82,6 +93,7 @@
     left: auto;
 }
 
+/* css to bottom tooltip arrow */
 #tooltip.bottom .tooltip-arrow {
     top: 0;
     left: 50%;
@@ -90,6 +102,7 @@
     border-bottom-color: #000;
 }
 
+/* css to all tooltip arrow */
 #tooltip .tooltip-arrow {
     position: absolute;
     width: 0;
@@ -99,6 +112,7 @@
     border-style: solid;
 }
 
+/* css to inner tooltip */
 #tooltip .tooltip-inner {
     max-width: 200px;
     padding: 3px 8px;
@@ -108,10 +122,12 @@
     border-radius: 4px;
 }
 
+/* CSS to make tooltip visible */
 #tooltip.on {
     display: block;
 }
 
+/* CSS to hide tooltip */
 #tooltip.off {
     display: none;
 }
